@@ -1,0 +1,46 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.App form {
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+ align-items: center;
+}
+
+.cards{
+  color: black;
+  display: grid;
+  grid-gap: 10px;
+  width: 600px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid;
+}
+
+.cards li button {
+  position: absolute;
+  font-size: 10px;
+  top: 5px;
+  right: 5px;
+}
+
+.cards li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}

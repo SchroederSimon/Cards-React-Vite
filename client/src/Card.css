@@ -1,0 +1,49 @@
+
+  
+  .Deck {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .Deck form {
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .nestedCards{
+    color: black;
+    display: grid;
+    grid-gap: 10px;
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .nestedCards li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid;
+    padding: 25px;
+    
+  }
+  
+  .nestedCards li button {
+    position: absolute;
+    font-size: 10px;
+    top: 5px;
+    right: 5px;
+  }
+  
+  .nestedCards li:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
